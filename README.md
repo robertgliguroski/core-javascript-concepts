@@ -11,3 +11,8 @@ This project is a small contribution to that mission. I completely share Kyle's 
 For years, we as developers have been using Javascript daily, though mostly through a library like jQuery and mostly for DOM manipulation. But with the increased popularity of Javascript and the introduction of new libraries like React and frameworks like Angular, we now tend to write a huge part of our projects in Javascript(through those frameworks). The domain shifted from mostly(or only) DOM manipulation to writing a large part of the business logic in Javascript. And yet, we are still content with reading the specific framework's documentation and/or a couple of books/tutorials and continue using Javascript without fully understanding it.
 
 My view on this topic is that in the same way that a database developer needs to know advanced SQL and have at least some minimum knowledge of how the DBMS works; and a .NET developer needs to have very good knowledge and mastery of the C# language and OOP in general in order to write quality code - a Javascript developer(or a full-stack developer who writes either pure Javascript or through some framework) should know and understand at least the very basic of the core concepts and principles of the language.
+
+
+## Contents
+
+1. Behavior delegation in JS(Objects linked to other objects - OLOO)
