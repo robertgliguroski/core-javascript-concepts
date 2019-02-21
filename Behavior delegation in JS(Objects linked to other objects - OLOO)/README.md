@@ -32,7 +32,7 @@ We will now look at a third variation of the same code we saw in our two previou
 
 According to Kyle Simpson, the most important thing to remember when talking about "inheritance", "classes" and objects/prototypes in Javascript is that the actual mechanism we need to utilize is all about objects being linked to other objects.
 
-If we have a look at the "Fighter_BehaviorDelegation.js" file, we notice straight away that we do not define functions, nor we define classes, but we just define objects, pure objects without any bluepring from which we will instantiate our objects. This object will hold its own data and behavior. If we want to reuse some functionality that a different object has, we do not make it "extend" that other object, but we simply "link" it to that other object, allowing it to delegate to the other object whenever needed.
+If we have a look at the "Fighter_BehaviorDelegation.js" file, we notice straight away that we do not define functions, nor we define classes, but we just define objects, pure objects without any blueprint from which we will instantiate our objects. This object will hold its own data and behavior. If we want to reuse some functionality that a different object has, we do not make it "extend" that other object, but we simply "link" it to that other object, allowing it to delegate to the other object whenever needed.
 
 Kyle Simpson calls this style of code "OLOO - Objects Linked to Other Objects". It's a bit of a strange-sounding name for me, but I think that when you think about it - it correctly defines and displays what is actually happening in Javascript. It explains the mechanism which allows us to use behavior delegation. The links between those objects allow Javascript objects to be able to delegate to different objects and reference their properties/methods when needed and if not found on the original object.
 
@@ -44,6 +44,6 @@ which creates a link between the Fighter object and the Person object(please not
 
 Later, when i define the "hireFighter()" method of the Fighter object, I can reference and use the "hire()" method, which is defined on the Person object, by simply calling "this.hire();". Note that I do not need any "prototype" references in order to do that. 
 
-//TODO: Elaborate on the difference in code between the three approaches here before concluding this section
+So, if we compare the OLOO code to the ES6 class code, we would be right to say that the class example is perhaps more readable, from a standpoint of style or readability. But once we take into account the potential problems the class syntax might cause, and also the fact that it only disguises the prototype mechanism as classes without actually providing a real class mechanism, then I would agree with Kyle Simpson that the OLOO code is much better overall.
 
-Behavior delegation is a powerful design pattern, and is very different than the ideas in class-oriented langauges, like inheritance, parent and child classes, polymorphism etc.
+And more importantly - it is pure objects, the way Javascript is supposed to work, using the very powerful design pattern of behavior delegation.
