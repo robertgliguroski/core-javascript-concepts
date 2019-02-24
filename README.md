@@ -16,3 +16,6 @@ My view on this topic is that in the same way that a database developer needs to
 ## Contents
 
 1. Behavior delegation in JS(Objects linked to other objects - OLOO)
+2. Closure
+3. Lexical scope and hoisting
+4. The Revealing Module Pattern
