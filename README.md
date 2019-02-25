@@ -18,3 +18,4 @@ My view on this topic is that in the same way that a database developer needs to
 2. Closure
 3. Lexical scope and hoisting
 4. The Revealing Module Pattern
+5. The "this" keyword
